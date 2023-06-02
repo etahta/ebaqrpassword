@@ -1,0 +1,5 @@
+#!/bin/sh
+psw=$(/usr/bin/passwdgenerator)
+echo -e "$psw\n$psw\n" | passwd ebaqr
+echo $psw>/etc/qrpsw
+exit 0
